@@ -1,0 +1,1 @@
+document.getElementById('h1').innerHTML="le lien de script marche ";
