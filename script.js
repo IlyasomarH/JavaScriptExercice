@@ -1,24 +1,28 @@
-// javaScript and content
-
-document.getElementById('demo').innerHTML="Nous allons apprendre javaScript";
-
-// JavaScript and HTML Attribute Values.
-function Eteindre(argument) {
-	document.getElementById('img').src='../../../sninping tools/javaScript/cours 0/off.png';
-}
-
-function Allumer(argument) {
-	document.getElementById('img').src='../../../sninping tools/javaScript/cours 0/on.png'
-}
+//I.	JavaScript Output
 
 
-//JavaScript and HTML Styles (CSS).
-
-document.getElementById('h1').style.color="red";
-
-// JavaScript and Hidding HTML Elements
-
-document.getElementById('img').style.display="none";
+// •	Writing into an HTML element, using innerHTML.
 
 
-//JavaScript and Showing HTML Elements
+document.getElementById('demo').innerHTML="Assalamou-Aleikoume";
+
+
+
+
+// •	Writing into the HTML output using document.write().
+
+
+
+document.write("voila la seconde affichage avec la fonction write()");
+
+
+
+
+//•	Writing into an alert box, using window.alert().
+
+
+window.alert("voila la 3eme affichage avec la fonction alert()");
+
+
+
+//
