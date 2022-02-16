@@ -4,7 +4,7 @@
 // •	Writing into an HTML element, using innerHTML.
 
 
-document.getElementById('demo').innerHTML="Assalamou-Aleikoume";
+document.getElementById('demo').innerHTML=2*4;
 
 
 
@@ -13,7 +13,7 @@ document.getElementById('demo').innerHTML="Assalamou-Aleikoume";
 
 
 
-document.write("voila la seconde affichage avec la fonction write()");
+document.write(2+6);
 
 
 
@@ -21,7 +21,7 @@ document.write("voila la seconde affichage avec la fonction write()");
 //•	Writing into an alert box, using window.alert().
 
 
-window.alert("voila la 3eme affichage avec la fonction alert()");
+window.alert("ASC");
 
 
 
