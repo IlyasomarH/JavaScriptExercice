@@ -1,79 +1,64 @@
 
-// variables 
 
-// nombre 
-
-
-// let age=2+6    operand et operateur 
-
-
-
-//declaration d'un array
-
-
-let tab=["ilyas","omar",169,12]
-// document.write("ASC")
-
-
-
-// Ajouter un element à la fin du tableau et return taille du tableau 
-let taille=tab.push("Farah")
-console.log("la taille est "+ taille)
-console.log( tab)
-
-
-
-// Supprimer le dernier élément du tableau et return l'element en question
-
-let dernierElementSupprimer= tab.pop()
-console.log("la dernier element du tableau a été supprimer")
-console.log( tab)
-console.log("la dernier element supprimer est "+ dernierElementSupprimer)
-
-//Supprimer le premier élément du tableau  et return l'element en question
-let premierElementSuprimer= tab.shift()
-console.log("la premiere element du tableau a été supprimer")
-console.log( tab)
-console.log("la premiere element supprimer est "+ premierElementSuprimer)
-
-// ajouter un element au debut du tableau
-console.log("ajouter un element au debut du tableau et return la taille du tableau")
-tab.unshift("Mako")
-console.log( tab)
-
-
-// declarer le tableau
-
-
-const semaine=['lun', 'mra', 'mer', 'jeu', 'ven', 'sam', 'ddi' ]
-document.write(semaine)
-
-// 1.	Retirer le dernière valeur du tableau jours
-
-semaine.pop()
-document.write('<br>')
-document.write(semaine)
-
-// 3.	Ajouter la valeur ‘dim’ à la fin du tableau
-
-semaine.push('dim')
-
-document.write('<br>')
-document.write(semaine)
-// 4.	Remplacer la valeur ‘mra’ par ‘mar’
-
-semaine[1]="mar"
-
-document.write('<br>')
-document.write(semaine)
-
-//6.	Afficher la troisième valeur du tableau
-document.write('<br>')
-document.write(semaine[2])
+//  let numeroMois=Number(prompt("saisir un numero compris entre 1 a 12 pour savoir le mois correspond ?"))
 
 
 
 
-// tab[0]="Ali"
+//  function getMois(numero){
 
-// console.log(tab.length)
+ 	
+
+//  		let Mois=['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'juin', 'juillet', 'Aout', 'Septembre', 'octobre', 'Novembre' , 'Decembre']
+
+//  	if(numero>=1 && numero<=12){
+//          alert('vous avez choisi ' + Mois[numero-1])
+//  	}
+//  	else{
+//  		throw "numeroMoisInvelid"
+//  	}
+//  }
+
+
+// try{
+
+//  getMois(numeroMois)
+// }catch (e) {
+
+//  alert(e); // on gère l'erreur avec une fonction
+// }
+
+
+
+
+
+// autre 
+
+// function f() {
+//   try {
+//     console.log(0);
+
+//     // return true
+//      throw "bug";
+//   } catch(e) {
+//     console.log(1);
+//     return true; // Cette instruction est bloquée jusqu'à la fin du bloc finally
+//     console.log(2); // Ne pourra jamais être exécuté
+//   } finally {
+//     console.log(3);
+//     // return true; // On surcharge l'instruction "return" précédente
+//     console.log(4); // Ne pourra jamais être exécuté
+//   }
+//   // "return false" est exécuté
+
+//   console.log(5); // Ne pourra jamais être exécuté
+// }
+// f()
+
+
+
+try {
+    throw new Error("Ouups !");
+} catch (e) {
+    console.log(e.name + ": " + e.message);
+}
