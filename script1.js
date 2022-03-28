@@ -1,64 +1,72 @@
+// document.querySelector('#h1').style.color='red'
+
+// let p=document.querySelector('p')
 
 
-//  let numeroMois=Number(prompt("saisir un numero compris entre 1 a 12 pour savoir le mois correspond ?"))
+// p.addEventListener('mouseover', function(){
+// 	this.style.color="red"
+// })
+
+
+
+// p.addEventListener('mouseout', function(){
+// 	this.style.color="black"
+// })
+
+
+// let lien= document.querySelector('a')
+
+// lien.addEventListener('click', function(e){
+// 		confirm('vous voulez vraiment quitter')
+// 		e.preventDefault()
+// })
 
 
 
 
-//  function getMois(numero){
-
- 	
-
-//  		let Mois=['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'juin', 'juillet', 'Aout', 'Septembre', 'octobre', 'Novembre' , 'Decembre']
-
-//  	if(numero>=1 && numero<=12){
-//          alert('vous avez choisi ' + Mois[numero-1])
-//  	}
-//  	else{
-//  		throw "numeroMoisInvelid"
-//  	}
-//  }
 
 
-// try{
+// let d=document.querySelector('select')
 
-//  getMois(numeroMois)
-// }catch (e) {
 
-//  alert(e); // on gère l'erreur avec une fonction
+// d.addEventListener('change',function(){
+// 	// document.write("vous avez choisi :" + d.value)
+// 	document.getElementById('p').innerHTML="vous avez choisi :" + d.value
+// })
+
+
+
+
+
+
+// let d=document.querySelector('h1')
+
+// let f=function mafonction()
+// {
+// 	d.style.color="blue"
 // }
 
+// d.addEventListener('mouseover',f)
 
 
 
 
-// autre 
 
-// function f() {
-//   try {
-//     console.log(0);
 
-//     // return true
-//      throw "bug";
-//   } catch(e) {
-//     console.log(1);
-//     return true; // Cette instruction est bloquée jusqu'à la fin du bloc finally
-//     console.log(2); // Ne pourra jamais être exécuté
-//   } finally {
-//     console.log(3);
-//     // return true; // On surcharge l'instruction "return" précédente
-//     console.log(4); // Ne pourra jamais être exécuté
-//   }
-//   // "return false" est exécuté
-
-//   console.log(5); // Ne pourra jamais être exécuté
-// }
-// f()
+// d.addEventListener('mouseout',function(){
+// 	d.style.color="red"
+// })
 
 
 
-try {
-    throw new Error("Ouups !");
-} catch (e) {
-    console.log(e.name + ": " + e.message);
-}
+
+
+let boutton=document.querySelectorAll('button')
+
+
+let enfant =boutton[0]
+
+enfant.addEventListener('click',function(){
+		enfant.style.backgroundColor='#F1A'
+		enfant.style.color='white'
+})
