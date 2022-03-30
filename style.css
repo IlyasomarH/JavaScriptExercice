@@ -5,10 +5,18 @@
 	/*border: 2px solid black;*/
 	height: 300px;
 	display: flex;
-	flex-direction: row;
-	/*align-items: center;*/
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	/*justify-content: center;*/
+	width: 50%;
+	margin: auto;
 
+
+
+}
+
+.conteneur div{
+	margin-bottom: 100px;
 }
 
 button{
@@ -20,3 +28,14 @@ button{
 	background-color: #F1A;
 	color: white;
 }*/
+
+
+button:focus{
+		background-color: #F1A;
+		color: white;
+
+}
+/*p{
+	display: none;
+}*/
+
