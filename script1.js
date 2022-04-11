@@ -1,74 +1,101 @@
+// getting HTML element 
 
+	// let titre =document.getElementById('h1')
 
-//  let moyen =prompt("saisir votre moyenne generale")
+	// let titre=document.getElementsByTagName('h1')[0]
 
-// let moyenne=parseInt(moyen, 10)
+	// let titre=document.getElementsByClassName('h')[0]
 
-//     function DetMention(moyenne) {
-      
-//         if(moyenne<10){
-//             document.write('votre mention est faible')
-//         }
-//         else if(moyenne>=10 && moyenne<14)
-//         {
-//             document.write('votre mention est passable')
-//         }
-//         else if(moyenne>=14 && moyenne<20){
-//             document.write('votre mention est trés bien')
-//         }
-//         else{
-//              throw "votre nombre n'est valable " 
-//             // alert("asc")
-//         }
-//     }
+	 let titre=document.querySelector('h1') 
+	 let btn1=document.querySelectorAll('button')[0]
+	 let btn2=document.querySelectorAll('button')[1]
+	 let image=document.querySelector('img')
 
-// try{
-
-//   DetMention(moyenne)
-
-
-// }catch(e){
-    
-//     alert(e)
-// }
-
-
-
-// vous voullez creer un tableau qui contient 12
-
-
-// let tab=['Janvier', 'fevrier','Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Otobre', 'Novembre', 'Deccembre' ]
-
-
-// // vous allez demander de saisir nombre compris entre 1 a 12
-
-// let numeroMois=prompt('saisir un nombre du mois')
-
-
-// // vous allez verifier s'il a saisir un nombre compris entre 1 a 12
-// function afficherMois(numeroMois) {
-    
-//     if(isNaN(numeroMois) || numeroMois<0 || numeroMois>12){
-//         throw "votre nombre n'est pas valable"
-//     }else{
-        
-//             alert('vous avez choisi ' + tab[numeroMois-1])
-           
-//     }
-// }
-
-
-// try{
-//     afficherMois(numeroMois)
-// }catch(e){
-//     alert(e)
-// }
-
-
-// vous allez creer une fonction qui permet de d'afficher 
+	 // alert(btn.innerHTML)
 
 
 
 
 
+// changer le contenu d'un element 
 
+	// titre.innerHTML="le titre est changer"
+
+	// titre.textContent="ALI"
+
+
+
+
+// Exercice 
+
+
+	// ajouter un contenu a un element sans changer son propre contenu.
+
+
+// JavaScript can change all the HTML attributes in the page
+
+
+			btn1.addEventListener('click', function(){
+			     
+                
+   
+   				document.querySelector('p').className="red"
+   				// document.querySelector('p').className='red'
+
+  
+              //image.src="2.png"
+
+			  // document.querySelector('p').classList.toggle('blue')
+
+			  
+
+
+			       // document.querySelector('p').innerHTML="paragraphe est changer"
+			})
+
+			btn2.addEventListener('click', function(){
+				document.querySelector('p').className='blue'
+			})
+
+
+//•	JavaScript can change all the CSS styles in the page
+
+
+    titre.style.fontStyle='italic'
+
+
+
+// •	JavaScript can change all the HTML elements in the page
+
+
+
+
+// 
+
+document.querySelector('h1').classList.add('red')
+
+document.getElementsByTagName('p')[0].classList.replace('red', 'blue')
+
+// let bol=document.querySelector('p').classList.contains("red")
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let p=document.querySelector('p')
+
+
+// p.addEventListener('click', function(){
+
+
+// 	p.classList.toggle('blue')
+
+// })
